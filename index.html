@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script type="text/javascript" src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  </script>
+
+</head>
+
+<body id="main" onload="onDocLoad()">
+  <form id="Inputs" autocomplete="off">
+    <div>
+      <br>
+      <input id="quantityInput" type="number" min="1" value=1> : Enter the Quantity
+    </div>
+    <div>
+      <br>
+      <input id="labelInput" type="text" placeholder="Label Name"> : Enter the Label Name </input>
+    </div>
+    <div>
+      <br>
+      <input id="boldInput" type="text" placeholder="Bold Text"> : Enter the Main Text </input>
+    </div>
+    <div>
+      <br>
+      <input id="normalInput" type="text" placeholder="Empty if None"> : Enter the Subtitle </input>
+    </div>
+    <div>
+      <br>
+        <input id="startIndex" type="number" autocomplete="off" value = "0"> : Skip Spaces </input>
+    </div>
+    <div>
+      <br>
+    <select id="orientation">
+      <option>Top-Down</option>
+      <option>Left-Right</option>
+    </select>
+      : Choose the orientation
+    </div>
+      
+    <div id="errors"> </div>
+    
+    <div id="page">
+      <bdi id="indent">
+        <p id="customer"> </p>
+      </bdi>
+      <span class = "Column" id="Column1">
+      </span><span class = "Column" id="Column2">
+      </span><span class = "Column" id="Column3">
+      </span>
+
+      <!--     <p id="name"> Item
+    <p id="description"> Description <br>
+    <p id="price"> Price <br>
+    <p id="quantity"> Quantity <br>
+    <p id="totalPrice"> Total <br>
+    <p id = "delete"> Delete <br> -->
+
+    </div>
+    <br><br>
+
+    </div>
+    <div id="buttons">
+      <button type="button" onclick="addEstimate();">New Profile</button>
+      <button type="button" onclick="deleteTable();">Clear Estimates</button>
+      <button type="button" onclick="printHelper();">Export Table</button>
+    </div>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
